@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Contatos</title>
+	<!--Meta-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, image-scale=1">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<!--css a parte-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!---fonte-->
+	<link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet'>
+
+	
+</head>
+<body>
+	<header>
+		<figure class="logo">
+		<img src="logo/logo3.png">
+		</figure>
+		<nav>
+			<ul class="navbar">
+				<li><a href="index.html">Página Inicial</a></li>
+				<li><a href="produtos.html">Produtos</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li id="topo"><a class="ativo" href="">Contatos</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main style="height: 600px">
+		<h1>Contato</h1>
+		<form class="cttcont">
+
+			<section class="col-sm-2">
+				<label for="nome" class="lbl"s>Nome:  </label>
+			</section>	
+
+			<section class="col-sm-10">
+				<input type="text" name="nome" id="nomectt" placeholder="Digite seu nome completo">
+			</section>
+		
+			<section class="col-sm-2">
+				<label for="email"class="lbl">E-mail: </label>
+			</section>
+
+			<section class="col-sm-10">
+					<input type="email" name="e-mail" id="emailctt" placeholder="Digite seu e-mail...">
+			</section>
+			
+			<section class="col-sm-2">
+				<label for="cel" class="lbl">Telefone: </label>
+			</section>
+
+			<section class="col-sm-10">
+					<input type="tel" name="cel" id="telctt" placeholder="Digite seu telefone">
+			</section>
+			
+			<section class="col-sm-2">
+				<label class="lbl">Mensagem: </label>
+			</section>
+
+			<section class="col-sm-10">
+				<textarea id="txtctt" placeholder="Digite aqui sua mensagem."></textarea>
+			</section>
+			<section class="col-sm-12" style="padding-top: 30px;">
+			<button class="enviarbtn" onclick="alerta()">Enviar</button>
+			</section>
+		</form>
+		<script>
+			function alerta(){
+				alert("Sua mensagem foi enviada!")
+			}
+		</script>
+	</main>
+	<footer>
+		
+
+	</footer>
+</body>
+</html>
